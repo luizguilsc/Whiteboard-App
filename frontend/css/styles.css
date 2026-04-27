@@ -157,3 +157,23 @@ button:disabled {
   width: 100%;
   text-align: left;
 }
+
+.folders-panel {
+  margin-bottom: 12px;
+}
+
+.folder-create {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.folders-list {
+  display: grid;
+  gap: 6px;
+}
+
+.folder-link {
+  text-align: left;
+}

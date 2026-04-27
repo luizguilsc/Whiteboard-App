@@ -6,17 +6,20 @@ from typing import Any, Dict, List
 class BoardMetadata(BaseModel):
     id: int
     name: str
+    slug: str
     updated_at: str
 
 
 class BoardPayload(BaseModel):
     name: str = Field(default="Meu Board")
+    slug: str | None = None
     # Estrutura aberta para facilitar evolução do schema no MVP.
     data: Dict[str, Any] = Field(default_factory=lambda: {"elements": [], "connections": []})
 
 
 class BoardResponse(BoardPayload):
     id: int
+    slug: str
     updated_at: str
 
 

@@ -1,7 +1,7 @@
 """Entry-point do backend FastAPI."""
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.api.routes import router
 from app.core.config import STATIC_DIR
@@ -17,6 +17,11 @@ def on_startup() -> None:
 
 @app.get("/")
 def index():
+    return FileResponse(STATIC_DIR / "index.html")
+
+
+@app.get("/{slug}")
+def folder_route(slug: str):
     return FileResponse(STATIC_DIR / "index.html")
 
 

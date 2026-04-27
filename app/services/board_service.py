@@ -13,9 +13,12 @@ def get_all_boards():
 
 
 def get_board_or_404(board_id: int):
-    board = db.get_board(board_id)
-    return board
+    return db.get_board(board_id)
 
 
-def save_board(*, board_id: Optional[int], name: str, data: Dict):
-    return db.save_board(board_id=board_id, name=name, data=data)
+def get_board_by_slug(slug: str):
+    return db.get_board_by_slug(slug)
+
+
+def save_board(*, board_id: Optional[int], name: str, data: Dict, slug: Optional[str] = None):
+    return db.save_board(board_id=board_id, name=name, data=data, slug=slug)
