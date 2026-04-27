@@ -27,7 +27,7 @@
         <button data-action="add-rect">Retângulo</button>
         <button data-action="add-circle">Círculo</button>
         <button data-action="add-arrow">Seta Livre</button>
-        <button data-action="connect-selected">Conectar 2 itens</button>
+        <button data-action="connect-selected">Conectar itens</button>
       </div>
 
       <h2>Arquivos e exportação</h2>
@@ -51,13 +51,24 @@
         <button data-action="load-board">Carregar último</button>
       </div>
 
-      <p class="hint">Dica: use mouse wheel para zoom e arraste o canvas com botão do meio.</p>
+      <section id="inspectorPanel" class="inspector">
+        <h2 id="inspectorTitle">Nenhum elemento selecionado</h2>
+        <p id="inspectorEmpty" class="hint">Selecione um elemento no board para editar textos, dimensões e propriedades.</p>
+        <form id="inspectorForm" hidden></form>
+        <button id="deleteSelected" class="danger" type="button" disabled>Excluir elemento selecionado</button>
+      </section>
+
+      <p class="hint">Dica: use wheel para zoom, arraste o board pelo fundo e use Delete/Backspace para excluir.</p>
       <p id="status" class="status">Pronto.</p>
     </aside>
 
     <main class="board-area">
       <div id="boardContainer"></div>
     </main>
+
+    <div id="contextMenu" class="context-menu" hidden>
+      <button id="contextDelete" type="button">Excluir elemento</button>
+    </div>
 
     <script src="https://unpkg.com/konva@9/konva.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
