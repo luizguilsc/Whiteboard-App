@@ -13,7 +13,7 @@ body {
   background: var(--bg);
   color: var(--text);
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 320px 1fr;
   height: 100vh;
 }
 
@@ -26,7 +26,7 @@ body {
 .sidebar h1 { margin-top: 0; font-size: 1.2rem; }
 .sidebar h2 { font-size: 1rem; margin: 16px 0 8px; }
 .field { display: grid; gap: 6px; margin-bottom: 12px; }
-input[type="text"], input[type="number"] {
+input[type="text"] {
   width: 100%;
   padding: 8px;
   border: 1px solid #374151;
@@ -50,21 +50,8 @@ button, .button-like {
   font-size: 0.82rem;
 }
 button:hover, .button-like:hover { border-color: var(--accent); }
-.hint { font-size: 0.75rem; color: #94a3b8; margin-top: 12px; }
+.hint { font-size: 0.75rem; color: #94a3b8; margin-top: 16px; }
 .status { font-size: 0.75rem; color: #7dd3fc; }
-
-.inspector {
-  border: 1px solid #334155;
-  border-radius: 12px;
-  padding: 12px;
-  background: #0b1220;
-}
-.hidden { display: none; }
-.items-editor { margin-bottom: 12px; }
-.items-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-#itemList { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-#itemList li { display: grid; grid-template-columns: 1fr auto auto; gap: 6px; align-items: center; }
-#itemList input { padding: 6px; border: 1px solid #334155; border-radius: 8px; background: #111827; color: #e5e7eb; }
 
 .board-area {
   padding: 12px;

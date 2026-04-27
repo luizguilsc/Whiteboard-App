@@ -53,9 +53,9 @@ Projeto inicial de whiteboard inspirado em Milanote, mas com identidade própria
 ## 4) MVP atual implementado
 
 - Canvas navegável (pan + zoom).
-- Adição de: texto, sticky note, listas, colunas, tabela editável, pasta navegável, checklist, progresso, retângulo, círculo, seta e imagem.
-- Drag & drop com pan separado (botão do meio), seleção mais precisa, redimensionamento e editor contextual (menu suspenso).
-- Conexão entre elementos selecionados e movimento de elementos para pastas.
+- Adição de: texto, sticky note, listas, colunas, tabela, grupo/pasta, checklist, progresso, retângulo, círculo, seta e imagem.
+- Drag & drop, seleção, redimensionamento e edição de texto (duplo clique).
+- Conexão entre elementos selecionados.
 - Importar JSON local e imagem local.
 - Exportar JSON, PNG e PDF.
 - Salvar/carregar board no backend (SQLite).

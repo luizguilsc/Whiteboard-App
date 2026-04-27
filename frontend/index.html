@@ -21,19 +21,13 @@
         <button data-action="add-list">Lista</button>
         <button data-action="add-column">Coluna</button>
         <button data-action="add-table">Tabela</button>
-        <button data-action="add-folder">Pasta</button>
+        <button data-action="add-folder">Grupo/Pasta</button>
         <button data-action="add-checklist">Checklist</button>
         <button data-action="add-progress">Progresso</button>
         <button data-action="add-rect">Retângulo</button>
         <button data-action="add-circle">Círculo</button>
         <button data-action="add-arrow">Seta Livre</button>
         <button data-action="connect-selected">Conectar 2 itens</button>
-      </div>
-
-      <h2>Ações de agrupamento</h2>
-      <div class="toolbar-grid">
-        <button data-action="move-to-folder">Mover seleção p/ pasta</button>
-        <button data-action="back-folder">Voltar para raiz</button>
       </div>
 
       <h2>Arquivos e exportação</h2>
@@ -57,37 +51,7 @@
         <button data-action="load-board">Carregar último</button>
       </div>
 
-      <h2>Editor rápido (menu suspenso)</h2>
-      <div id="inspector" class="inspector hidden">
-        <div class="field">
-          <label for="editText">Texto/Título</label>
-          <input id="editText" type="text" />
-        </div>
-        <div class="field">
-          <label for="editProgress">Progresso (0-100)</label>
-          <input id="editProgress" type="number" min="0" max="100" />
-        </div>
-        <div class="items-editor">
-          <div class="items-header">
-            <span>Itens / Cards</span>
-            <button id="addItemBtn" type="button">+ Item</button>
-          </div>
-          <ul id="itemList"></ul>
-        </div>
-        <div class="field">
-          <label>Tabela</label>
-          <div class="toolbar-grid">
-            <button id="addRowBtn" type="button">+ Linha</button>
-            <button id="removeRowBtn" type="button">- Linha</button>
-            <button id="addColBtn" type="button">+ Coluna</button>
-            <button id="removeColBtn" type="button">- Coluna</button>
-          </div>
-          <small>Dica: clique numa célula da tabela para editar.</small>
-        </div>
-      </div>
-
-      <p class="hint">Pan: botão do meio. Zoom: scroll. Duplo clique em pasta para entrar.</p>
-      <p id="scopeLabel" class="hint">Escopo atual: Raiz</p>
+      <p class="hint">Dica: use mouse wheel para zoom e arraste o canvas com botão do meio.</p>
       <p id="status" class="status">Pronto.</p>
     </aside>
 
